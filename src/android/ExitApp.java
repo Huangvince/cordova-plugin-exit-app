@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * Created by Vince_Huang on 2017/10/13.
  */
 
-public class NavigationBridge extends CordovaPlugin {
+public class ExitApp extends CordovaPlugin {
   private String methodName;
   private CallbackContext callbackContext;
   private JSONObject arg;
