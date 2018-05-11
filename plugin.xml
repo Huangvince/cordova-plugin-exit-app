@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-exitapp" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>cordova-plugin-exitapp</name>
+<plugin id="cordova-plugin-exit-app" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-exit-app</name>
     <js-module name="exitAppPlugin" src="www/exitAppPlugin.js">
-        <clobbers target="cordova.plugins.exitAppPlugin" />
+        <clobbers target="window.exitAppPlugin" />
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">

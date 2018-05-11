@@ -1,11 +1,11 @@
 {
-  "name": "cordova-plugin-exitapp",
+  "name": "cordova-plugin-exit-app",
   "version": "1.0.0",
   "description": "cordova android exit app plugin ",
   "author": "Vince Huang",
   "license": "Apache-2.0",
   "cordova": {
-    "id": "cordova-plugin-exitapp",
+    "id": "cordova-plugin-exit-app",
     "platforms": [
       "android"
     ]
