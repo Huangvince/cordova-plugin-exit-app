@@ -1,9 +1,7 @@
-package com.dbjtech.record.plugins;
+package org.apache.cordova.exitapp;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
-
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
@@ -11,8 +9,6 @@ import org.apache.cordova.CordovaWebView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.ArrayList;
 
 /**
  * Created by Vince_Huang on 2017/10/13.
