@@ -1,7 +1,5 @@
 package org.apache.cordova.exitapp;
 
-import android.app.Activity;
-import android.content.Intent;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
@@ -15,21 +13,7 @@ import org.json.JSONObject;
  */
 
 public class ExitApp extends CordovaPlugin {
-  private String methodName;
-  private CallbackContext callbackContext;
-  private JSONObject arg;
 
-  public JSONObject getArg() {
-    return arg;
-  }
-
-  public CallbackContext getCallbackContext() {
-    return callbackContext;
-  }
-
-  public String getMethodName() {
-    return methodName;
-  }
 
   @Override
   public Boolean shouldAllowBridgeAccess(String url) {
@@ -43,17 +27,9 @@ public class ExitApp extends CordovaPlugin {
 
   @Override
   public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-    this.methodName = action;
-    this.callbackContext = callbackContext;
-    this.arg = args.getJSONObject(0);
-    cordova.getActivity().runOnUiThread(new Runnable() {
-      @Override
-      public void run() {
-        if (getMethodName().equals("exits")) {
-          System.exit(0);
-        }
-      }
-    });
+    if (action.equals("exitApp")) {
+      System.exit(0);
+    }
     return true;
   }
 }
